@@ -1,3 +1,9 @@
+mod message_streaming;
+
 fn main() {
-    println!("Hello, world!");
+    let msg = "Hello, World!";
+    let output = message_streaming::streaming(msg);
+    println!("{}", output)
 }
+
+
