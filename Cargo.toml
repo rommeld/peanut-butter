@@ -7,4 +7,7 @@ edition = "2024"
 name = "peanut_butter"
 path = "src/main.rs"
 
+[lib]
+path = "src/lib.rs"
+
 [dependencies]

@@ -1,9 +1,7 @@
-mod message_streaming;
+use peanut_butter::message_streaming::streaming;
 
 fn main() {
-    let msg = "Hello, World!";
-    let output = message_streaming::streaming(msg);
+    let msg: &str = "Hello, World!";
+    let output = streaming(msg);
     println!("{}", output)
 }
-
-
